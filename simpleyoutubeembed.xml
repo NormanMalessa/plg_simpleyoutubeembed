@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+	<name>Content - SimpleYoutubeEmbed</name>
+	<author>Norman Malessa</author>
+	<creationDate>2018/03/25</creationDate>
+	<copyright>Copyright (C) 2018 Norman Malessa. All rights reserved.</copyright>
+	<license>The MIT license; see LICENSE</license>
+	<authorEmail>mail@norman-malessa.de</authorEmail>
+	<authorUrl>www.norman-malessa.de</authorUrl>
+	<version>1.0.0</version>
+	<description>This plugin will change youtube URLs in your content with an embed iframe.</description>
+	<files>
+		<filename plugin="simpleyoutubeembed">simpleyoutubeembed.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_simpleyoutubeembed.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="width" default="425" type="text" label="PLG_CONTENT_SIMPLEYOUTUBEEMBED_WIDTH" description="PLG_CONTENT_SIMPLEYOUTUBEEMBED_WIDTH_DESC" />
+				<field name="height" default="344" type="text" label="PLG_CONTENT_SIMPLEYOUTUBEEMBED_HEIGHT" description="PLG_CONTENT_SIMPLEYOUTUBEEMBED_HEIGHT_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name=""><![CDATA[http://joomla.norman-malessa.de/updates/plg_simpleyoutubeembed.xml]]></server>
+	</updateservers>
+</extension>
